@@ -1,0 +1,3 @@
+2025-01-22 10:19:51 INFO  Log4JTest:16 - info级别的日志
+2025-01-22 10:19:51 WARN  Log4JTest:17 - warn级别的日志
+2025-01-22 10:19:51 ERROR Log4JTest:18 - error级别的日志
