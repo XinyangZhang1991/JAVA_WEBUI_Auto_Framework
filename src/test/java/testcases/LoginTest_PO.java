@@ -50,7 +50,8 @@ public class LoginTest_PO extends BaseTest {
     @Test(dataProvider="getLoginFailDatas")
     public void login_failed (String username,String password,String expected){
         RemoteWebDriver driver = openBrowser("chrome");
-        driver.get("http://shop.lemonban.com:3344/");
+        MaxBrowser(driver);
+        openUrL(driver, "http://shop.lemonban.com:3344/");
 
         HomePage homepage = new HomePage(driver);
         homepage.clickLogin();
@@ -65,7 +66,7 @@ public class LoginTest_PO extends BaseTest {
     //Dataprovider 规定的必须使用 object[][] 类型的数据
     public Object[][] getLoginFailDatas(){
         Object[][] datas={{"java_auto","","请输入密码"},
-                {"","123456","账号为4~16位字母、数字或下划"},
+                {"","123456","账号为4~16位字母、数字或下划线"},
                 {"","","账号为4~16位字母、数字或下划线"}
         };
         return datas;
@@ -74,7 +75,8 @@ public class LoginTest_PO extends BaseTest {
 
     public void login_fail_error_password(){
         RemoteWebDriver driver = openBrowser("chrome");
-        driver.get("http://shop.lemonban.com:3344/");
+        MaxBrowser(driver);
+        openUrL(driver, "http://shop.lemonban.com:3344/");
 
         HomePage homepage = new HomePage(driver);
         homepage.clickLogin();
@@ -84,9 +86,6 @@ public class LoginTest_PO extends BaseTest {
         //断言
         Assert.assertEquals(loginPage.Login_error_tips(),"账号或密码不正确");
     }
-
-
-
 
 
 

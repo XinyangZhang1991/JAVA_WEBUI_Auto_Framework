@@ -26,31 +26,39 @@ public class HomePage extends BasePage {
     }
     //action on the page - method
     public void clickLogin (){
-        waitElementClickable(driver, 4, login_link).click();
+//        waitElementClickable(driver, 4, login_link).click();
+        click(driver,login_link);
     }
 
     public WebElement findwelcometips (){
-        return waitElementVisible(driver, 4, welcome_tips);
+
+//        return waitElementVisible(driver, 4, welcome_tips);
+          return getElement(driver,welcome_tips);
     }
 
     public String getUsername(){
 //        WebElement webElement = driver.findElement(user_name);
 //        return webElement.getText();
-          return waitElementVisible(driver, 4, user_name).getText();
+//          return waitElementVisible(driver, 4, user_name).getText();
+        return getElementText(driver,user_name);
     }
 
     public void click_selected_product(String product_name){
         //step1: click the product list icon
-        waitElementClickable(driver, 4, product_list).click();
+//        waitElementClickable(driver, 4, product_list).click();
+        click(driver,product_list);
+
         //step 2 : click a product you choose
         //商品名字不能写死，需要通过变量传递过来
         //"//div[text()='" and +"']" are fixed parts of the string
         By selected_goods = By.xpath("//div[text()='"+product_name+"']");
-        waitElementClickable(driver, 4, selected_goods).click();
+//        waitElementClickable(driver, 4, selected_goods).click();
+        click(driver,selected_goods);
     }
 
     public void click_trolley_icon (){
-        waitElementClickable(driver, 4, trolley_icon).click();
+        //waitElementClickable(driver, 4, trolley_icon).click();
+        click(driver,trolley_icon);
     }
 }
 

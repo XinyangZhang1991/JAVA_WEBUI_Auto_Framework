@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" >
+    <test name="登录模块">
+        <classes>
+            <class name="testcases.LoginTest_PO"/>
+            <class name="testcases.Add_Items_to_trolley"/>
+        </classes>
+    </test>
+</suite>

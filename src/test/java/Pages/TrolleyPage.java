@@ -25,11 +25,10 @@ public class TrolleyPage extends BasePage {
     public String get_product_price() {
         String trolley_unit_price_text = waitElementVisible(driver, 8, trolleypage_product_unit_price).getText();
         return trolley_unit_price_text;
-
     }
 
     public String get_product_number() {
-        return waitElementVisible(driver, 8, trolleypage_product_number).getText();
+        return waitElementVisible(driver, 8, trolleypage_product_number).getAttribute("value");
     }
 
 }

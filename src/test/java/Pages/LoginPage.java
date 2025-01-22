@@ -1,6 +1,5 @@
 package Pages;
 
-
 import common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -23,20 +22,26 @@ public class LoginPage extends BasePage {
     }
 
     public void login( String username, String password){
-        waitElementVisible(driver, 8,username_input).sendKeys(username);
-        waitElementVisible(driver,8,password_input).sendKeys (password);
-        waitElementVisible(driver,8,login_button).click();
+//        waitElementVisible(driver, 8,username_input).sendKeys(username);
+//        waitElementVisible(driver,8,password_input).sendKeys (password);
+//        waitElementVisible(driver,8,login_button).click();
+        input(driver,username_input,username);
+        input(driver,password_input,password);
+        click(driver,login_button);
 
     }
     //登陆输入框错误提示
     public String Login_error_input_tips(){
-        return waitElementVisible(driver,8,login_error_input_tips).getText();
+
+//        return waitElementVisible(driver,8,login_error_input_tips).getText();
+        return getElementText(driver,login_error_input_tips);
     }
 
     //登陆账号/密码错误的提示
     public String Login_error_tips(){
-        String errormessage = waitElementVisible(driver,8,login_error_tips).getText();
-        return errormessage;
+//        String errormessage = waitElementVisible(driver,8,login_error_tips).getText();
+//        return errormessage;
+        return getElementText(driver,login_error_tips);
     }
 
 

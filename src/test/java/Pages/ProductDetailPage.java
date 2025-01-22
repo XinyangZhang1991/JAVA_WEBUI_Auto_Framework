@@ -20,7 +20,8 @@ public class ProductDetailPage extends BasePage {
 
     public String get_product_prices(){
         //get the produce price
-        String unit_price_text = waitElementVisible(driver,8,product_unit_price).getText();
+//        String unit_price_text = waitElementVisible(driver,8,product_unit_price).getText();
+        String unit_price_text =  getElementText(driver,product_unit_price);
         System.out.println("product prices is"+unit_price_text);
         //把换行符号\n换成空的， 并去掉空格
         //The replaceAll("\n", "") method finds all occurrences of newline characters (\n) in the unit_price_text and replaces them with an empty string (""), effectively removing them.
@@ -29,7 +30,11 @@ public class ProductDetailPage extends BasePage {
 
     }
     public void  adding_into_trolley () {
-        waitElementClickable(driver,8,add_cart).click();
+
+//        waitElementClickable(driver,8,add_cart).click();
+        click(driver,add_cart);
+
+
     }
 
 }

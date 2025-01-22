@@ -1,3 +1,47 @@
-2025-01-22 10:19:51 INFO  Log4JTest:16 - info级别的日志
-2025-01-22 10:19:51 WARN  Log4JTest:17 - warn级别的日志
-2025-01-22 10:19:51 ERROR Log4JTest:18 - error级别的日志
+2025-01-22 15:08:56 INFO  BaseTest:18 - Opened the Chrome Browser
+2025-01-22 15:08:59 INFO  BaseTest:35 - Browser is maximized
+2025-01-22 15:09:24 INFO  BaseTest:43 - website URL is http://shop.lemonban.com:3344/ 
+2025-01-22 15:09:24 INFO  BasePage:32 - the element has been clicked is By.linkText: 登录
+2025-01-22 15:09:25 INFO  BasePage:37 - java_autois being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-01-22 15:09:25 INFO  BasePage:37 - is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-01-22 15:09:25 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='login-button']
+2025-01-22 15:09:25 INFO  BasePage:42 - element acquried isBy.xpath: //div[@class='error' and @style='']and the text in this element is请输入密码
+2025-01-22 15:09:25 INFO  BaseTest:18 - Opened the Chrome Browser
+2025-01-22 15:09:26 INFO  BaseTest:35 - Browser is maximized
+2025-01-22 15:09:53 INFO  BaseTest:43 - website URL is http://shop.lemonban.com:3344/ 
+2025-01-22 15:09:53 INFO  BasePage:32 - the element has been clicked is By.linkText: 登录
+2025-01-22 15:09:53 INFO  BasePage:37 - is being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-01-22 15:09:53 INFO  BasePage:37 - 123456is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-01-22 15:09:53 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='login-button']
+2025-01-22 15:09:53 INFO  BasePage:42 - element acquried isBy.xpath: //div[@class='error' and @style='']and the text in this element is账号为4~16位字母、数字或下划线
+2025-01-22 15:09:53 INFO  BaseTest:18 - Opened the Chrome Browser
+2025-01-22 15:09:54 INFO  BaseTest:35 - Browser is maximized
+2025-01-22 15:10:17 INFO  BaseTest:43 - website URL is http://shop.lemonban.com:3344/ 
+2025-01-22 15:10:17 INFO  BasePage:32 - the element has been clicked is By.linkText: 登录
+2025-01-22 15:10:17 INFO  BasePage:37 - is being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-01-22 15:10:18 INFO  BasePage:37 - is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-01-22 15:10:18 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='login-button']
+2025-01-22 15:10:18 INFO  BasePage:42 - element acquried isBy.xpath: //div[@class='error' and @style='']and the text in this element is账号为4~16位字母、数字或下划线
+2025-01-22 15:10:18 INFO  BaseTest:18 - Opened the Chrome Browser
+2025-01-22 15:10:19 INFO  BaseTest:35 - Browser is maximized
+2025-01-22 15:10:33 INFO  BaseTest:43 - website URL is http://shop.lemonban.com:3344/ 
+2025-01-22 15:10:33 INFO  BasePage:32 - the element has been clicked is By.linkText: 登录
+2025-01-22 15:10:33 INFO  BasePage:37 - lemonxinyangis being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-01-22 15:10:33 INFO  BasePage:37 - Ginny_1212is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-01-22 15:10:33 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='login-button']
+2025-01-22 15:10:43 INFO  BasePage:48 - element located isBy.xpath: //span[text()='欢迎来到柠檬班']
+2025-01-22 15:10:43 INFO  BasePage:42 - element acquried isBy.xpath: //a[@class='link-name']and the text in this element islemonxinyang
+2025-01-22 15:10:47 INFO  BaseTest:18 - Opened the Chrome Browser
+2025-01-22 15:10:48 INFO  BaseTest:35 - Browser is maximized
+2025-01-22 15:11:06 INFO  BaseTest:43 - website URL is http://shop.lemonban.com:3344/ 
+2025-01-22 15:11:06 INFO  BasePage:32 - the element has been clicked is By.linkText: 登录
+2025-01-22 15:11:06 INFO  BasePage:37 - lemonxinyangis being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-01-22 15:11:06 INFO  BasePage:37 - Ginny_1212is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-01-22 15:11:06 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='login-button']
+2025-01-22 15:11:19 INFO  BasePage:32 - the element has been clicked is By.linkText: 商品列表
+2025-01-22 15:11:19 INFO  BasePage:32 - the element has been clicked is By.xpath: //div[text()='真皮圆筒包']
+2025-01-22 15:11:21 INFO  BasePage:42 - element acquried isBy.xpath: //div[@class='item goods-price']//div[@class='price']and the text in this element is￥
+0
+.00
+2025-01-22 15:11:21 INFO  BasePage:32 - the element has been clicked is By.xpath: //a[@class='add-cart']
+2025-01-22 15:11:22 INFO  BasePage:32 - the element has been clicked is By.xpath: //span[@data-route='cart']
