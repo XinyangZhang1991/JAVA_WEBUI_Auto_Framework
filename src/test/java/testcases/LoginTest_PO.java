@@ -1,0 +1,93 @@
+package testcases;
+
+
+import Pages.HomePage;
+import Pages.LoginPage;
+import common.BaseTest;
+import intermediatepractice.Log4JTest;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import java.time.Duration;
+
+import static java.time.Duration.ofSeconds;
+
+public class LoginTest_PO extends BaseTest {
+
+
+    private static Logger logger = Logger.getLogger(LoginTest_PO.class);
+   @Test
+    public void login_success() throws InterruptedException {
+        RemoteWebDriver driver = openBrowser("chrome");
+        MaxBrowser(driver);
+        openUrL(driver, "http://shop.lemonban.com:3344/");
+
+       HomePage homePage = new HomePage(driver);
+       homePage.clickLogin();
+
+       //在创建的时候就要把参数传递过来了
+       LoginPage loginPage = new LoginPage(driver);
+       loginPage.login("lemonxinyang","Ginny_1212");
+
+       WebElement webElement_welcomemessage = homePage.findwelcometips();
+       Assert.assertNotNull(webElement_welcomemessage);
+
+       Assert.assertEquals(homePage.getUsername(),"lemonxinyang");
+
+       Thread.sleep(3000);
+       driver.quit();
+    }
+
+    @Test(dataProvider="getLoginFailDatas")
+    public void login_failed (String username,String password,String expected){
+        RemoteWebDriver driver = openBrowser("chrome");
+        driver.get("http://shop.lemonban.com:3344/");
+
+        HomePage homepage = new HomePage(driver);
+        homepage.clickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login(username,password);
+        //断言
+        Assert.assertEquals(loginPage.Login_error_input_tips(),expected);
+    }
+
+    @DataProvider
+    //Dataprovider 规定的必须使用 object[][] 类型的数据
+    public Object[][] getLoginFailDatas(){
+        Object[][] datas={{"java_auto","","请输入密码"},
+                {"","123456","账号为4~16位字母、数字或下划"},
+                {"","","账号为4~16位字母、数字或下划线"}
+        };
+        return datas;
+    }
+
+
+    public void login_fail_error_password(){
+        RemoteWebDriver driver = openBrowser("chrome");
+        driver.get("http://shop.lemonban.com:3344/");
+
+        HomePage homepage = new HomePage(driver);
+        homepage.clickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("java_auto","123");
+        //断言
+        Assert.assertEquals(loginPage.Login_error_tips(),"账号或密码不正确");
+    }
+
+
+
+
+
+
+}
