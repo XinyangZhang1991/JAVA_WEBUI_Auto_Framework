@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 
 public class Add_Items_to_trolley extends BaseTest {
 
+
+    public RemoteWebDriver driver;
 @Test
     public void add_one_item() throws InterruptedException{
 

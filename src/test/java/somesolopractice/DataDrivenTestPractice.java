@@ -1,4 +1,4 @@
-package intermediatepractice;
+package somesolopractice;
 
 
 import org.testng.annotations.DataProvider;

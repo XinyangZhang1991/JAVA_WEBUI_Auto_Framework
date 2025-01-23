@@ -1,4 +1,4 @@
-package intermediatepractice;
+package somesolopractice;
 
 
 import org.openqa.selenium.By;
@@ -56,14 +56,14 @@ public class LoginTest_not_POM {
     }
 
     public static WebElement waitElementVisible(RemoteWebDriver driver, long timeout, By by) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
         WebElement webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return webElement;
     }
 
 
     public static WebElement waitElementClickable(RemoteWebDriver driver, long timeout, By by) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
         WebElement webElement = wait.until(ExpectedConditions.elementToBeClickable(by));
         return webElement;
     }

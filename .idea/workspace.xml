@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="325160f0-8f7a-4288-bd6b-62ef104a150b" name="Changes" comment="initiall version - (.common is not fully done)">
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="325160f0-8f7a-4288-bd6b-62ef104a150b" name="Changes" comment="version 2 - .common package have some new methods">
+      <change afterPath="$PROJECT_DIR$/src/test/java/listener/TestResultListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/Screenshot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/web_auto.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/web_auto.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ProductDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/TrolleyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/TrolleyPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intermediatepractice/DataDrivenTestPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/DataDrivenTestPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intermediatepractice/Log4JTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/Log4JTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intermediatepractice/LoginTest_not_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/LoginTest_not_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/Add_Items_to_trolley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/Add_Items_to_trolley.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/LoginTest_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/LoginTest_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.A:/JAVACode2025/WebUIFrameWork/testng.xml.executor": "Run",
     "TestNG.Add_Items_to_trolley.add_one_item.executor": "Run",
     "TestNG.Add_Items_to_trolley.executor": "Run",
     "TestNG.DataDrivenTestPractice.login.executor": "Run",
@@ -69,6 +70,7 @@
     "TestNG.LoginTest.login_success.executor": "Run",
     "TestNG.LoginTest_PO.executor": "Run",
     "TestNG.LoginTest_PO.login_success.executor": "Run",
+    "TestNG.Screenshot.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "A:/JAVACode2025/WebUIFrameWork",
@@ -86,16 +88,13 @@
       <recent name="intermediatepractice" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest_PO">
-    <configuration name="Log4JTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="intermediatepractice.Log4JTest" />
+  <component name="RunManager" selected="TestNG.Add_Items_to_trolley">
+    <configuration name="A:/JAVACode2025/WebUIFrameWork/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebUIFrameWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="intermediatepractice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,17 +126,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataDrivenTestPractice.login" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Add_Items_to_trolley.add_one_item" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebUIFrameWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="intermediatepractice.*" />
+          <option name="PATTERN" value="testcases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="intermediatepractice" />
-      <option name="MAIN_CLASS_NAME" value="intermediatepractice.DataDrivenTestPractice" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.Add_Items_to_trolley" />
+      <option name="METHOD_NAME" value="add_one_item" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -190,29 +189,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest_PO.login_success" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Screenshot" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebUIFrameWork" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="somesolopractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LoginTest_PO" />
-      <option name="METHOD_NAME" value="login_success" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="PACKAGE_NAME" value="somesolopractice" />
+      <option name="MAIN_CLASS_NAME" value="somesolopractice.Screenshot" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -220,19 +207,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Log4JTest" />
-      <item itemvalue="TestNG.LoginTest_PO.login_success" />
+      <item itemvalue="TestNG.A:/JAVACode2025/WebUIFrameWork/testng.xml" />
+      <item itemvalue="TestNG.Add_Items_to_trolley.add_one_item" />
+      <item itemvalue="TestNG.Screenshot" />
       <item itemvalue="TestNG.Add_Items_to_trolley" />
-      <item itemvalue="TestNG.DataDrivenTestPractice.login" />
       <item itemvalue="TestNG.LoginTest_PO" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest_PO" />
-        <item itemvalue="TestNG.LoginTest_PO.login_success" />
         <item itemvalue="TestNG.Add_Items_to_trolley" />
-        <item itemvalue="Application.Log4JTest" />
-        <item itemvalue="TestNG.DataDrivenTestPractice.login" />
+        <item itemvalue="TestNG.Add_Items_to_trolley.add_one_item" />
+        <item itemvalue="TestNG.A:/JAVACode2025/WebUIFrameWork/testng.xml" />
+        <item itemvalue="TestNG.Screenshot" />
+        <item itemvalue="TestNG.LoginTest_PO" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737544052492</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 2 - .common package have some new methods">
+      <option name="closed" value="true" />
+      <created>1737560701459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737560701459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +282,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initiall version - (.common is not fully done)" />
-    <option name="LAST_COMMIT_MESSAGE" value="initiall version - (.common is not fully done)" />
+    <MESSAGE value="version 2 - .common package have some new methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2 - .common package have some new methods" />
   </component>
 </project>
