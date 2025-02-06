@@ -18,6 +18,8 @@ public class HomePage extends BasePage {
     private RemoteWebDriver driver;
     private By product_list =By.linkText("商品列表");
     private By trolley_icon = By.xpath("//span[@data-route='cart']");
+    private By homePageSearchBar = By.xpath("//div[@class='right']//div[@class='search']//input[@placeholder='请输入商品名称']");
+    private By homePageclicksearchicon = By.xpath("//div[@class='right']//div[@class='search']//input[@type='submit']");
 
     //通过有参构造把初始化的参数传递过来
     public HomePage (RemoteWebDriver driver){
@@ -59,6 +61,12 @@ public class HomePage extends BasePage {
     public void click_trolley_icon (){
         //waitElementClickable(driver, 4, trolley_icon).click();
         click(driver,trolley_icon);
+    }
+
+
+    public void input_into_searchbar (String inputtext){
+        input(driver,homePageSearchBar,inputtext);
+        click(driver,homePageclicksearchicon);
     }
 }
 

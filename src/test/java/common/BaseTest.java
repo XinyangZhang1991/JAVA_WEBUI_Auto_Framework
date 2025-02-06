@@ -3,7 +3,9 @@ package common;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,18 +19,18 @@ public class BaseTest {
     public RemoteWebDriver driver;
 
 
-    public static RemoteWebDriver openBrowser(String browserName) {
+    public RemoteWebDriver openBrowser(String browserName) {
 
         if ("chrome".equalsIgnoreCase(browserName)) {
             //open chrome
-            System.setProperty("webdriver.chrome.driver", "src/test/Resources/chromedriver131.exe");
+            System.setProperty("webdriver.chrome.driver", "src/test/Resources/chromedrivernew133.exe");
             logger.info("Opened the Chrome Browser");
             return new ChromeDriver();
         } else if ("firefox".equalsIgnoreCase(browserName)) {
             // open firefox
             System.setProperty("webdriver.gecko.driver", "src/test/Resources/geckodriverwin64.exe");
             logger.info("Opened the firefox Browser");
-            return new FirefoxDriver();
+            return new  FirefoxDriver();
         } else {
             logger.error("check the browser your input ");
             throw new IllegalArgumentException("Unsupported browser: " + browserName);
@@ -60,4 +62,19 @@ public class BaseTest {
         }
     }
 
+    private void highlightElement(RemoteWebDriver driver, WebElement element) {
+        // Use JavaScript to change the element's border temporarily
+        String originalStyle = element.getAttribute("style");
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+        // Add a red border to the element
+        jsExecutor.executeScript("arguments[0].style.border='3px solid red'", element);
+
+        // Optionally, wait a short time so the highlight is visible (e.g., 300ms)
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
 }

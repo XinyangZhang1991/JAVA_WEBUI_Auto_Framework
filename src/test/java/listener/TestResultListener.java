@@ -1,6 +1,7 @@
 package listener;
 
 
+import common.BaseTest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -24,18 +25,22 @@ public class TestResultListener implements IHookable {
         if(testResult.getThrowable() != null){
             System.out.println("测试用例异常");
             //testResult还会保存有当前测试类的实例(instance)-》对象
-            Add_Items_to_trolley instance = (Add_Items_to_trolley)testResult.getInstance();
+            //Add_Items_to_trolley instance = (Add_Items_to_trolley)testResult.getInstance();
+            BaseTest instance = (BaseTest) testResult.getInstance();
             takeScreenshot(instance.driver,"A:\\JAVACode2025\\WebUIFrameWork\\screenshots\\failureimage.png");
+
+//            takeScreenshot(instance.driver,"A:\\JAVACode2025\\WebUIFrameWork\\screenshots\\failureimage.png");
 
         }
 
     }
     public void takeScreenshot(RemoteWebDriver driver, String path) {
-        File file1 = driver.getScreenshotAs(OutputType.FILE);
-        File file2 = new File(path);
+        File screenshotFile = driver.getScreenshotAs(OutputType.FILE);
+        File destinationFile = new File(path);
         try {
-            FileUtils.copyFile(file1,file2);
+            FileUtils.copyFile(screenshotFile,destinationFile);
         } catch (IOException e) {
+            System.out.println("Failed to save screenshot: " + e.getMessage());
             e.printStackTrace();
         }
     }

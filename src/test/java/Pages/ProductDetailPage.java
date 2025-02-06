@@ -11,8 +11,8 @@ public class ProductDetailPage extends BasePage {
     //trolley button
     private By add_cart = By.xpath("//a[@class='add-cart']");
 
-    private By product_unit_price = By.xpath("//div[@class='item goods-price']//div[@class='price']");
-
+//    private By product_unit_price = By.xpath("//div[@class='item goods-price']//div[@class='price'//div[@class='big']");
+    private By product_unit_price = By.xpath("//div[@class='item goods-price']//span[@class='big']");
 
     public ProductDetailPage (RemoteWebDriver driver){
         this.driver =driver;

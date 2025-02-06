@@ -19,9 +19,9 @@ public class LoginTest_PO extends BaseTest {
     private static Logger logger = Logger.getLogger(LoginTest_PO.class);
    @Test
     public void login_success() throws InterruptedException {
-        RemoteWebDriver driver = openBrowser("chrome");
-        MaxBrowser(driver);
-        openUrL(driver, "http://shop.lemonban.com:3344/");
+       RemoteWebDriver driver = openBrowser("chrome");
+       MaxBrowser(driver);
+       openUrL(driver, "http://shop.lemonban.com:3344/");
 
        HomePage homePage = new HomePage(driver);
        homePage.clickLogin();
@@ -68,7 +68,7 @@ public class LoginTest_PO extends BaseTest {
     public void login_fail_error_password(){
         RemoteWebDriver driver = openBrowser("chrome");
         MaxBrowser(driver);
-        openUrL(driver, "http://shop.lemonban.com:3344/");
+        openUrL(driver,"http://shop.lemonban.com:3344/");
 
         HomePage homepage = new HomePage(driver);
         homepage.clickLogin();
