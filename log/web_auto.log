@@ -1,33 +1,22 @@
-2025-02-06 18:02:58 INFO  BaseTest:27 - Opened the Chrome Browser
-2025-02-06 18:02:59 INFO  BaseTest:44 - Browser is maximized
-2025-02-06 18:03:25 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
-2025-02-06 18:03:28 INFO  BasePage:37 - the element has been clicked is By.linkText: 登录
-2025-02-06 18:03:31 INFO  BasePage:45 - java_autois being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
-2025-02-06 18:03:34 INFO  BasePage:45 - is being input into the element:By.xpath: //input[@placeholder='请输入密码']
-2025-02-06 18:03:37 INFO  BasePage:37 - the element has been clicked is By.xpath: //a[@class='login-button']
-2025-02-06 18:03:37 INFO  BasePage:51 - element acquired isBy.xpath: //div[@class='error' and @style='']and the text in this element is请输入密码
-2025-02-06 18:03:37 INFO  BaseTest:27 - Opened the Chrome Browser
-2025-02-06 18:03:39 INFO  BaseTest:44 - Browser is maximized
-2025-02-06 18:04:12 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
-2025-02-06 18:04:15 INFO  BasePage:37 - the element has been clicked is By.linkText: 登录
-2025-02-06 18:04:18 INFO  BasePage:45 - is being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
-2025-02-06 18:04:22 INFO  BasePage:45 - 123456is being input into the element:By.xpath: //input[@placeholder='请输入密码']
-2025-02-06 18:04:25 INFO  BasePage:37 - the element has been clicked is By.xpath: //a[@class='login-button']
-2025-02-06 18:04:25 INFO  BasePage:51 - element acquired isBy.xpath: //div[@class='error' and @style='']and the text in this element is账号为4~16位字母、数字或下划线
-2025-02-06 18:04:25 INFO  BaseTest:27 - Opened the Chrome Browser
-2025-02-06 18:04:26 INFO  BaseTest:44 - Browser is maximized
-2025-02-06 18:04:40 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
-2025-02-06 18:04:43 INFO  BasePage:37 - the element has been clicked is By.linkText: 登录
-2025-02-06 18:04:46 INFO  BasePage:45 - is being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
-2025-02-06 18:04:50 INFO  BasePage:45 - is being input into the element:By.xpath: //input[@placeholder='请输入密码']
-2025-02-06 18:04:53 INFO  BasePage:37 - the element has been clicked is By.xpath: //a[@class='login-button']
-2025-02-06 18:04:53 INFO  BasePage:51 - element acquired isBy.xpath: //div[@class='error' and @style='']and the text in this element is账号为4~16位字母、数字或下划线
-2025-02-06 18:04:53 INFO  BaseTest:27 - Opened the Chrome Browser
-2025-02-06 18:04:54 INFO  BaseTest:44 - Browser is maximized
-2025-02-06 18:05:24 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
-2025-02-06 18:05:28 INFO  BasePage:37 - the element has been clicked is By.linkText: 登录
-2025-02-06 18:05:31 INFO  BasePage:45 - lemonxinyangis being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
-2025-02-06 18:05:34 INFO  BasePage:45 - Ginny_1212is being input into the element:By.xpath: //input[@placeholder='请输入密码']
-2025-02-06 18:05:37 INFO  BasePage:37 - the element has been clicked is By.xpath: //a[@class='login-button']
-2025-02-06 18:05:53 INFO  BasePage:57 - element located isBy.xpath: //span[text()='欢迎来到柠檬班']
-2025-02-06 18:05:53 INFO  BasePage:51 - element acquired isBy.xpath: //a[@class='link-name']and the text in this element islemonxinyang
+2025-02-09 15:47:13 INFO  BaseTest:27 - Opened the Chrome Browser
+2025-02-09 15:47:15 INFO  BaseTest:44 - Browser is maximized
+2025-02-09 15:47:26 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
+2025-02-09 15:47:29 INFO  BasePage:38 -  Element clicked normally:By.linkText: 登录
+2025-02-09 15:47:32 INFO  BasePage:53 - lemonxinyangis being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-02-09 15:47:36 INFO  BasePage:53 - Ginny_1212is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-02-09 15:47:39 INFO  BasePage:38 -  Element clicked normally:By.xpath: //a[@class='login-button']
+2025-02-09 15:47:47 INFO  BasePage:65 - element located isBy.xpath: //span[text()='欢迎来到柠檬班']
+2025-02-09 15:47:48 INFO  BasePage:59 - element acquired isBy.xpath: //a[@class='link-name']and the text in this element islemonxinyang
+2025-02-09 15:47:51 INFO  BaseTest:27 - Opened the Chrome Browser
+2025-02-09 15:47:52 INFO  BaseTest:44 - Browser is maximized
+2025-02-09 15:48:03 INFO  BaseTest:52 - website URL is http://shop.lemonban.com:3344/ 
+2025-02-09 15:48:06 INFO  BasePage:38 -  Element clicked normally:By.linkText: 登录
+2025-02-09 15:48:09 INFO  BasePage:53 - lemonxinyangis being input into the element:By.xpath: //input[@placeholder='请输入手机号/用户名']
+2025-02-09 15:48:12 INFO  BasePage:53 - Ginny_1212is being input into the element:By.xpath: //input[@placeholder='请输入密码']
+2025-02-09 15:48:15 INFO  BasePage:38 -  Element clicked normally:By.xpath: //a[@class='login-button']
+2025-02-09 15:48:27 INFO  BasePage:53 - 真皮圆筒包is being input into the element:By.xpath: //div[@class="search-input-box"]/input
+2025-02-09 15:48:30 INFO  BasePage:38 -  Element clicked normally:By.xpath: //div[@class="search-input-box"]/following-sibling::input
+2025-02-09 15:48:38 INFO  BasePage:38 -  Element clicked normally:By.xpath: //div[text()='真皮圆筒包']
+2025-02-09 15:48:48 INFO  BasePage:59 - element acquired isBy.xpath: //div[@class='item goods-price']//span[@class='big']and the text in this element is799
+2025-02-09 15:48:51 INFO  BasePage:38 -  Element clicked normally:By.xpath: //a[@class='add-cart']
+2025-02-09 15:48:55 INFO  BasePage:38 -  Element clicked normally:By.xpath: //span[@data-route='cart']

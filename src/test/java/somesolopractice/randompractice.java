@@ -1,12 +1,11 @@
 package somesolopractice;
 
 
-import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.ProductDetailPage;
-import Pages.TrolleyPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.ProductDetailPage;
+import pages.TrolleyPage;
 import common.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

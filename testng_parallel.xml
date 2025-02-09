@@ -11,7 +11,7 @@
     <test name="firefox">
         <parameter name="browserName" value="firefox"/>
         <classes>
-            <class name="testcases.Add_Items_to_trolley"/>
+            <class name="testcases.LoginTest_PO"/>
         </classes>
     </test>
 </suite>

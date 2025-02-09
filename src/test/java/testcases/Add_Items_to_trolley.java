@@ -1,16 +1,11 @@
 package testcases;
 
-import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.ProductDetailPage;
-import Pages.TrolleyPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.ProductDetailPage;
+import pages.TrolleyPage;
 import common.BaseTest;
 import listener.TestResultListener;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.slf4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -27,7 +22,7 @@ public class Add_Items_to_trolley extends BaseTest {
 //@Parameters("browserName"): Declares that this method expects a parameter named browserName.
 //@Optional("chrome"): Provides a default value ("chrome") to be used if the parameter is not supplied.
 @Parameters({"browserName"})
-    public void add_one_item(@Optional("firefox")String browserName) throws InterruptedException {
+    public void add_one_item(@Optional("chrome")String browserName) throws InterruptedException {
 
 
     driver = openBrowser(browserName);
@@ -42,8 +37,8 @@ public class Add_Items_to_trolley extends BaseTest {
     Thread.sleep(3000);
     //step 2: select product
     String product_name = "真皮圆筒包";
-    //homePage.input_into_searchbar(product_name);
-
+    homePage.input_into_searchbar(product_name);
+    Thread.sleep (5000);
     homePage.click_selected_product(product_name);
     //step 3:adding into the trolley in the product detail page
     ProductDetailPage productdetailpage = new ProductDetailPage(driver);
@@ -76,12 +71,13 @@ public class Add_Items_to_trolley extends BaseTest {
         TrolleyPage trolleyPage = new TrolleyPage(driver);
         trolleyPage.delete_all();
         Thread.sleep(10000);
-        //Modify your finally block to only quit the driver after confirming that all listener actions (e.g., screenshot capture) are complete.
-       if (driver != null) {
-           driver.quit();
-           Logger logger = null;
-           logger.info("the browser is quited");
-       }
+        driver.quit();
+        //only quit the driver after confirming that all listener actions (e.g., screenshot capture) are complete.
+//       if (driver != null) {
+//           driver.quit();
+//           Logger logger = null;
+//           logger.info("the browser is quited");
+//       }
 
     }
 

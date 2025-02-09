@@ -29,12 +29,20 @@ public class BasePage {
     }
 
     public void click (RemoteWebDriver driver, By by) {
-
         WebElement element = driver.findElement(by);
-       waitElementClickable(driver,8,by);
+       waitElementClickable(driver,20,by);
        highlightElement(driver, element);
-       element.click();
-       logger.info("the element has been clicked is " +by);
+
+       try {
+           element.click(); //attempting a normal click
+           logger.info(" Element clicked normally:" +by);
+       } catch (Exception e) {
+           JavascriptExecutor js = (JavascriptExecutor) driver;
+           js.executeScript("arguments[0].click();", element);
+           logger.info("Element clicked using JavaScript: " + by);
+       }
+
+
     }
 
     public void input (RemoteWebDriver driver, By by , String inputdata) {
@@ -63,8 +71,8 @@ public class BasePage {
         String originalStyle = element.getAttribute("style");
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
-        // Add a red border to the element
-        jsExecutor.executeScript("arguments[0].style.border='3px solid red'", element);
+        // Add a green border to the element
+        jsExecutor.executeScript("arguments[0].style.border='3px solid green'", element);
 
         // Optionally, wait a short time so the highlight is visible (e.g., 300ms)
         try {

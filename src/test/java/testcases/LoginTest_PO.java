@@ -1,24 +1,25 @@
 package testcases;
 
 
-import Pages.HomePage;
-import Pages.LoginPage;
+import pages.HomePage;
+import pages.LoginPage;
 import common.BaseTest;
+import listener.TestResultListener;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import static java.time.Duration.ofSeconds;
-
+@Listeners(TestResultListener.class)
 public class LoginTest_PO extends BaseTest {
 
 
     private static Logger logger = Logger.getLogger(LoginTest_PO.class);
    @Test
-    public void login_success() throws InterruptedException {
+   @Parameters({"browserName"})
+    public void login_success(@Optional("chrome")String browserName) throws InterruptedException {
        RemoteWebDriver driver = openBrowser("chrome");
        MaxBrowser(driver);
        openUrL(driver, "http://shop.lemonban.com:3344/");
@@ -40,7 +41,8 @@ public class LoginTest_PO extends BaseTest {
     }
 
     @Test(dataProvider="getLoginFailDatas")
-    public void login_failed (String username,String password,String expected){
+    @Parameters({"browserName"})
+    public void login_failed (@Optional("chrome")String browserName,String username,String password,String expected){
         RemoteWebDriver driver = openBrowser("chrome");
         MaxBrowser(driver);
         openUrL(driver, "http://shop.lemonban.com:3344/");
@@ -56,7 +58,7 @@ public class LoginTest_PO extends BaseTest {
 
     @DataProvider
     //Dataprovider 规定的必须使用 object[][] 类型的数据
-    public Object[][] getLoginFailDatas(){
+    public Object[][] getLoginFailDatas(@Optional("chrome")String browserName){
         Object[][] datas={{"java_auto","","请输入密码"},
                 {"","123456","账号为4~16位字母、数字或下划线"},
                 {"","","账号为4~16位字母、数字或下划线"}
@@ -64,8 +66,8 @@ public class LoginTest_PO extends BaseTest {
         return datas;
     }
 
-
-    public void login_fail_error_password(){
+    @Parameters({"browserName"})
+    public void login_fail_error_password(@Optional("chrome")String browserName){
         RemoteWebDriver driver = openBrowser("chrome");
         MaxBrowser(driver);
         openUrL(driver,"http://shop.lemonban.com:3344/");

@@ -1,0 +1,8 @@
+
+生成Allure报告
+通过maven命令构建自动化测试
+在terminal里面输入mvn test
+注意：要生成Allure的报表，必须要通过mvn test去执行，不能通过选择测试类执行或者TestNG.xml执行。
+
+生成可视化Allure报表
+mvn io.qameta.allure:allure-maven:serve
