@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="325160f0-8f7a-4288-bd6b-62ef104a150b" name="Changes" comment="new chrome driver 133">
-      <change afterPath="$PROJECT_DIR$/src/test/Resources/SelfNotes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/stringattempt.java" afterDir="false" />
+    <list default="true" id="325160f0-8f7a-4288-bd6b-62ef104a150b" name="Changes" comment="09 Feb 2025 &#10;fixed a bug in the add an item (added search in Page)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/web_auto.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/web_auto.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/somesolopractice/LoginTest_not_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/somesolopractice/LoginTest_not_POM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/Add_Items_to_trolley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/Add_Items_to_trolley.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/LoginTest_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/LoginTest_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng_parallel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_parallel.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,20 +90,7 @@
       <recent name="intermediatepractice" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest_PO.login_success">
-    <configuration name="stringattempt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="somesolopractice.stringattempt" />
-      <module name="WebUIFrameWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="somesolopractice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginTest_PO">
     <configuration name="A:/JAVACode2025/WebUIFrameWork/testng_parallel.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebUIFrameWork" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_parallel.xml" />
@@ -121,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Add_Items_to_trolley.add_one_item" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Add_Items_to_trolley" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebUIFrameWork" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +111,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.Add_Items_to_trolley" />
-      <option name="METHOD_NAME" value="add_one_item" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest_PO" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebUIFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginTest_PO" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest_PO.login_failed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebUIFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginTest_PO" />
+      <option name="METHOD_NAME" value="login_failed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -157,38 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest_not_POM.login_success" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WebUIFrameWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="somesolopractice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="somesolopractice" />
-      <option name="MAIN_CLASS_NAME" value="somesolopractice.LoginTest_not_POM" />
-      <option name="METHOD_NAME" value="login_success" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.stringattempt" />
       <item itemvalue="TestNG.A:/JAVACode2025/WebUIFrameWork/testng_parallel.xml" />
-      <item itemvalue="TestNG.LoginTest_not_POM.login_success" />
+      <item itemvalue="TestNG.LoginTest_PO.login_failed" />
+      <item itemvalue="TestNG.LoginTest_PO" />
       <item itemvalue="TestNG.LoginTest_PO.login_success" />
-      <item itemvalue="TestNG.Add_Items_to_trolley.add_one_item" />
+      <item itemvalue="TestNG.Add_Items_to_trolley" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest_PO" />
+        <item itemvalue="TestNG.LoginTest_PO.login_failed" />
+        <item itemvalue="TestNG.Add_Items_to_trolley" />
         <item itemvalue="TestNG.LoginTest_PO.login_success" />
         <item itemvalue="TestNG.A:/JAVACode2025/WebUIFrameWork/testng_parallel.xml" />
-        <item itemvalue="TestNG.Add_Items_to_trolley.add_one_item" />
-        <item itemvalue="Application.stringattempt" />
-        <item itemvalue="TestNG.LoginTest_not_POM.login_success" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738865584473</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="09 Feb 2025 &#10;fixed a bug in the add an item (added search in Page)">
+      <option name="closed" value="true" />
+      <created>1739117872051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739117872051</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +274,8 @@
     <MESSAGE value="version 2 - .common package have some new methods" />
     <MESSAGE value="version 3 - listener class has problem" />
     <MESSAGE value="new chrome driver 133" />
-    <option name="LAST_COMMIT_MESSAGE" value="new chrome driver 133" />
+    <MESSAGE value="09 Feb 2025 &#10;fixed a bug in the add an item (added search in Page)" />
+    <option name="LAST_COMMIT_MESSAGE" value="09 Feb 2025 &#10;fixed a bug in the add an item (added search in Page)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

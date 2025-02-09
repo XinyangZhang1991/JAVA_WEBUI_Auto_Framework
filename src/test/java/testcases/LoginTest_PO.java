@@ -42,7 +42,7 @@ public class LoginTest_PO extends BaseTest {
 
     @Test(dataProvider="getLoginFailDatas")
     @Parameters({"browserName"})
-    public void login_failed (@Optional("chrome")String browserName,String username,String password,String expected){
+    public void login_failed (String username,String password,String expected){
         RemoteWebDriver driver = openBrowser("chrome");
         MaxBrowser(driver);
         openUrL(driver, "http://shop.lemonban.com:3344/");
@@ -58,7 +58,7 @@ public class LoginTest_PO extends BaseTest {
 
     @DataProvider
     //Dataprovider 规定的必须使用 object[][] 类型的数据
-    public Object[][] getLoginFailDatas(@Optional("chrome")String browserName){
+    public Object[][] getLoginFailDatas(){
         Object[][] datas={{"java_auto","","请输入密码"},
                 {"","123456","账号为4~16位字母、数字或下划线"},
                 {"","","账号为4~16位字母、数字或下划线"}
