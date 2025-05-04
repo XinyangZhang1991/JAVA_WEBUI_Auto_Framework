@@ -54,6 +54,8 @@ public class LoginTest_PO extends BaseTest {
         loginPage.login(username,password);
         //断言
         Assert.assertEquals(loginPage.Login_error_input_tips(),expected);
+
+        driver.quit();
     }
 
     @DataProvider
@@ -79,6 +81,8 @@ public class LoginTest_PO extends BaseTest {
         loginPage.login("java_auto","123");
         //断言
         Assert.assertEquals(loginPage.Login_error_tips(),"账号或密码不正确");
+
+        driver.quit();
     }
 
 

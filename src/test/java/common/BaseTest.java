@@ -23,7 +23,7 @@ public class BaseTest {
 
         if ("chrome".equalsIgnoreCase(browserName)) {
             //open chrome
-            System.setProperty("webdriver.chrome.driver", "src/test/Resources/chromedrivernew133.exe");
+            System.setProperty("webdriver.chrome.driver", "src/test/Resources/chromedriver136.exe");
             logger.info("Opened the Chrome Browser");
             return new ChromeDriver();
         } else if ("firefox".equalsIgnoreCase(browserName)) {
